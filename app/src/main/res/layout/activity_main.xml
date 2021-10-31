@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/contenedordetextos"
+        android:layout_width="351dp"
+        android:layout_height="252dp"
+        android:layout_marginBottom="4dp"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/boton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.627"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/boton"
+        android:layout_width="91dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginBottom="12dp"
+        android:text="Jugar"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.632" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="264dp"
+        android:layout_height="224dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/b"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.721"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <EditText
+            android:id="@+id/d"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:ems="10"
+            android:hint="Dijita un Sustantivo"
+            android:inputType="textPersonName"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/e"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="224dp"
+            android:layout_height="43dp"
+            android:ems="10"
+            android:hint="Dijitaa un Nombre Plural"
+            android:inputType="textPersonName"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/h"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="225dp"
+            android:layout_height="41dp"
+            android:ems="10"
+            android:hint="Djita tu Nombre"
+            android:inputType="textPersonName"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/z"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="223dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Un Ruido"
+            android:inputType="textPersonName"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/b"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="234dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="36dp"
+        android:ems="10"
+        android:hint="Dijita un Abjetivo"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/contenedordetextos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="152dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="40dp"
+        android:text="Volver a Jugar"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contenedordetextos"
+        app:layout_constraintVertical_bias="0.333" />
+
+</android.support.constraint.ConstraintLayout>
